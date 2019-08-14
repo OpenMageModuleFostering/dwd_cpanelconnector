@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<!--
+/**
+ *
+ * DwD-CpanelConnector - Magento Extension
+ *
+ * @copyright Copyright (c) 2014 DwDesigner Inc. (http://www.dwdeveloper.com/)
+ * @author Damian A. Pastorini - damian.pastorini@dwdeveloper.com
+ *
+ */
+-->
+<layout version="0.1.0">
+
+    <!-- adminhtml accounts controller: -->
+
+    <adminhtml_cpanel_accounts_index>
+        <reference name="content">
+            <block type="cpanel_connector/adminhtml_account" name="cpanel_connector_account"/>
+        </reference>
+    </adminhtml_cpanel_accounts_index>
+
+</layout>

@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<package>
+    <name>DwD_CpanelConnector</name>
+    <version>0.1.2</version>
+    <stability>stable</stability>
+    <license uri="http://opensource.org/licenses/afl-3.0.php">Academic Free License (AFL 3.0)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Sell your cPanel WHM hosting packages through Magento.</summary>
+    <description>&lt;h1&gt;DwDeveloper - cPanel Connector&lt;/h1&gt;&#xD;
+&lt;h2&gt;Features&lt;/h2&gt;&#xD;
+&lt;p&gt;DwD - cPanel Connector allows you to associate Magento products with cPanel WHM packages, that way you will be able to sell hosting packages through Magento and the hosts account will be created automatically.&lt;/p&gt;&#xD;
+&lt;h3&gt;About the extension&lt;/h3&gt;&#xD;
+&lt;p&gt;&#xD;
+The extension will create a new product attribute to associate products with your WHM packages.&lt;br/&gt;&#xD;
+Once you configure the admin account from your cPanel / WHM host in the extension system configuration, you will be able to get the packages list and assign each package to a product.&lt;br/&gt;&#xD;
+If the extension is enable once an invoice is saved for the related product the extension will connect through your cPanel to create the account.&lt;br/&gt;&#xD;
+If you don't want to implement that flow you also will be able to manage the accounts from the Accounts Manager.&lt;/p&gt;&#xD;
+&lt;p&gt;&#xD;
+Since this is a beta, the extension features are limited and you only be able to:&lt;br/&gt;&#xD;
+&lt;ul&gt;&#xD;
+    &lt;li&gt;Create accounts&lt;/li&gt;&#xD;
+    &lt;li&gt;Delete accounts&lt;/li&gt;&#xD;
+    &lt;li&gt;Activate accounts&lt;/li&gt;&#xD;
+    &lt;li&gt;Suspend accounts&lt;/li&gt;&#xD;
+    &lt;li&gt;Change an account package (this way you should be able to upgrade or downgrade an account)&lt;/li&gt;&#xD;
+    &lt;li&gt;Change account administration email&lt;/li&gt;&#xD;
+    &lt;li&gt;Accounts will be created automatically only in a success invoice save&lt;/li&gt;&#xD;
+&lt;/ul&gt;&#xD;
+&lt;/p&gt;&#xD;
+&lt;p&gt;&#xD;
+But don't worry, we are planning future upgrades to make the extension create the cPanel accounts automatically on billing agreements, suspend accounts automatically after X time if there's no new payments registered, and also make every cPanel option modifiable.&#xD;
+&lt;/p&gt;&#xD;
+&lt;h3&gt;How this extension will help you?&lt;/h3&gt;&#xD;
+&lt;p&gt;&#xD;
+What will be better than a complete e-commerce platform like Magento to sell anything?&lt;br/&gt;&#xD;
+You will get Magento's full power to sell your hosting packages and do a lot of stuff more like promote your services through social media, apply promotions or use multiple payment methods.&lt;br/&gt;&#xD;
+And why stop there? You can even sell any other related products like software or web apps or anything you like.&#xD;
+&lt;/p&gt;&#xD;
+&lt;h2&gt;How it works? Use it in simple steps:&lt;/h2&gt;&#xD;
+&lt;ul&gt;&#xD;
+&lt;li&gt;Go to System / Configuration / DwD Extensions / cPanel Connector&lt;/li&gt;&#xD;
+&lt;li&gt;Configure your user and password&lt;/li&gt;&#xD;
+&lt;li&gt;Specify the default package&lt;/li&gt;&#xD;
+&lt;li&gt;Specify if you need to create the accounts automatically on invoice save.&lt;/li&gt;&#xD;
+&lt;li&gt;Save the configuration&lt;/li&gt;&#xD;
+&lt;li&gt;Go to edit the attribute sets and assign the "associated_package" attribute to the attribute set you need (by default it will be assigned to the Default attribute set).&lt;/li&gt;&#xD;
+&lt;li&gt;Use / create virtual products to avoid the shipping step and assign each package to each product&lt;/li&gt;&#xD;
+&lt;li&gt;Enjoy!&lt;/li&gt;&#xD;
+&lt;/ul&gt;&#xD;
+&lt;h2&gt;Supported versions&lt;/h2&gt;&#xD;
+&lt;p&gt;Magento 1.8 to 1.9.x.&lt;/p&gt;&#xD;
+&lt;h2&gt;Support&lt;/h2&gt;&#xD;
+&lt;p&gt;For support, contact us at &lt;a href="mailto:info@dwdeveloper.com"&gt;info@dwdeveloper.com&lt;/a&gt;&lt;/p&gt;</description>
+    <notes>- Fix for Connect download.</notes>
+    <authors><author><name>Damian A. Pastorini</name><user>MAG002087848</user><email>damian.pastorini@dwdeveloper.com</email></author></authors>
+    <date>2016-02-10</date>
+    <time>13:28:55</time>
+    <contents><target name="mageetc"><dir name="modules"><file name="DwD_CpanelConnector.xml" hash="1cd8f1252b6999723e7fe84e308a97c4"/></dir></target><target name="magecommunity"><dir name="DwD"><dir name="CpanelConnector"><dir name="Block"><dir name="Adminhtml"><dir name="Account"><dir name="Edit"><dir name="Form"><dir name="Element"><file name="Useremail.php" hash="f8ae9ab4d35b0a32f06f09e06e7ca57d"/></dir></dir><file name="Form.php" hash="530674c43540b2605a1987882ee0907a"/></dir><file name="Edit.php" hash="500bc25557c87b9c6056cdb5c703cb48"/><file name="Grid.php" hash="bafc79b2bb3fb2cc5b7d9d326e7aab25"/></dir><file name="Account.php" hash="e6bf1c3a06ac8396f8390a976ac0423e"/></dir></dir><dir name="Helper"><file name="Data.php" hash="d75817667ee818922e5ac858bdb13143"/><file name="Email.php" hash="deb38e266464ec6701acb220a977aa1f"/><dir name="Form"><file name="Fields.php" hash="c264d201843ac7249ef21cdf95792edb"/></dir></dir><dir name="Model"><file name="Account.php" hash="b5308b73e854facb8b74545f6bceec8a"/><file name="Api.php" hash="32366467aeedcc372b5f64ed2fa87e83"/><dir name="Mysql4"><dir name="Account"><file name="Collection.php" hash="1eb2539a9fdc38916abdaa4999ccf253"/></dir><file name="Account.php" hash="0f8a44e20940bed551a33dbdda8239c7"/></dir><file name="Observer.php" hash="623bd6c1cf61f7c1cbcaf9881c93f5d2"/><dir name="Source"><file name="Package.php" hash="a3482cdfec433aaa1b43d329a704925a"/></dir></dir><dir name="controllers"><dir name="Adminhtml"><dir name="Cpanel"><file name="AccountsController.php" hash="df405b3d1e29a41130ad850e626e5994"/></dir></dir></dir><dir name="data"><dir name="cpanel_connector_setup"><file name="data-install-0.1.0.php" hash="846ffa84252575a6327c1ff0c528f461"/></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="2b9f6bf400923d18dfeb4d31a08c5ad6"/><file name="config.xml" hash="ff4c11257fb33af9c8bc3b13a173956d"/><file name="system.xml" hash="4472c40da58e930c22a6bd0120d47491"/></dir><dir name="sql"><dir name="cpanel_connector_setup"><file name="mysql4-install-0.1.0.php" hash="24590e5709d17721e66e8e03d86ba864"/></dir></dir></dir></dir></target><target name="mage"><dir name="lib"><dir name="DwD"><dir name="Cpanel"><file name="Api.php" hash="32750aeab9d8f2ec7e504d2e1ec3a5ef"/><file name="xmlapi.php" hash="68a6dfe64fad3c3a376180afecdc4619"/></dir></dir></dir><dir name="app"><dir name="locale"><dir name="en_US"><dir name="template"><dir name="email"><file name="cpanel_connector_account_created.html" hash="a24eebe27299848a81eb22e29392e726"/></dir></dir></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="dwd_cpanel_connector.xml" hash="6fb47c5b7d8d7671c03a77f4d1c1bf46"/></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.3.0</min><max>6.0.0</max></php></required></dependencies>
+</package>
