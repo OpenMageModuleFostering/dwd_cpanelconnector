@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/DwD_CpanelConnector",
+    "name": "OpenMageModuleFostering\/DwD_CpanelConnector",
     "type": "magento-module",
     "license": "Academic-Free-License-(AFL-3.0)",
     "homepage": "",
     "description": "Sell your cPanel WHM hosting packages through Magento.",
     "authors": [
-    {
-        "name": "Damian A. Pastorini",
-        "email": "damian.pastorini@dwdeveloper.com"
-    }
-],
+        {
+            "name": "Damian A. Pastorini",
+            "email": "damian.pastorini@dwdeveloper.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
